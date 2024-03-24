@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>curso-jsp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ServletLogin</display-name>
+    <servlet-name>ServletLogin</servlet-name>
+    <servlet-class>servlets.ServletLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletLogin</servlet-name>
+    <url-pattern>/ServletLogin</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>FilterAltenticacao</display-name>
+    <filter-name>FilterAltenticacao</filter-name>
+    <filter-class>filter.FilterAltenticacao</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FilterAltenticacao</filter-name>
+    <url-pattern>/FilterAltenticacao</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletUsuaioController</display-name>
+    <servlet-name>ServletUsuaioController</servlet-name>
+    <servlet-class>servlets.ServletUsuaioController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletUsuaioController</servlet-name>
+    <url-pattern>/ServletUsuaioController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletTelefone</display-name>
+    <servlet-name>ServletTelefone</servlet-name>
+    <servlet-class>servlets.ServletTelefone</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletTelefone</servlet-name>
+    <url-pattern>/ServletTelefone</url-pattern>
+  </servlet-mapping>
+</web-app>
